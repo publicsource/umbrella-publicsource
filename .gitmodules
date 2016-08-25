@@ -4,3 +4,9 @@
 [submodule "wp-scripts"]
 	path = wp-scripts
 	url = git@github.com:INN/wp-scripts.git
+[submodule "wp-content/themes/Largo"]
+	path = wp-content/themes/Largo
+	url = git@github.com:INN/Largo.git
+[submodule "wp-content/themes/theme-publicsource"]
+	path = wp-content/themes/theme-publicsource
+	url = git@github.com:INN/theme-publicsource.git
