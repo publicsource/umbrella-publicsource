@@ -1,5 +1,7 @@
 <?php
 
+define( 'INN_MEMBER', true );
+
 /**
  * Include theme files
  *
