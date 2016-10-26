@@ -1,6 +1,28 @@
 @import '../../../less/mixins.less';
 @import '../../../less/vars.less';
 
+// Some mixin utilities
+.twocolumn {
+  display: block;
+  width: 48.93617021%;
+  min-height: 28px;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+
+  &:nth-child( 2n ) {
+    margin-left: 2.12765957%;
+  }
+  &:nth-child( 2n + 1 ) {
+    clear: left;
+  }
+}
+.onecolumn {
+  clear: both;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
 
 // Also the buttons in the mobile-width Header Ad Zone
 #header-ad-zone-container {
@@ -8,6 +30,15 @@
     @media (max-width: 767px) {
       margin-top: 24px;
       .button-styles;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #homepage-featured {
+    & > .span8,
+    & > .span4 {
+      .onecolumn;
     }
   }
 }
@@ -93,6 +124,16 @@
     }
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  #home-recent-grid .span4 {
+    .twocolumn;
+  }
+}
+@media (max-width: 480px) {
+  #home-recent-grid .span4 {
+    .onecolumn;
+  }
+}
 
 #home-middle-feature {
   text-align: center;
@@ -131,28 +172,26 @@
     }
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  #home-category-grid .span3 {
+    .twocolumn;
+  }
+}
+@media (max-width: 480px) {
+  #home-category-grid .span3 {
+    .onecolumn;
+  }
+}
+
 
 #home-bottom-feature {
   .widget {
     text-align: center;
 
-    .widgettitle {
-      font-size: 1.3em;
-    }
   }
   .largo-recent-posts li {
     @media (min-width: 769px) {
-      display: block;
-      width: 48.93617021%;
-      min-height: 28px;
-      box-sizing: border-box;
-      float: left;
-      &:nth-child( 2n ) {
-        margin-left: 2.12765957%;
-      }
-      &:nth-child( 2n + 1 ) {
-        clear: left;
-      }
+      .twocolumn;
     }
   }
 }

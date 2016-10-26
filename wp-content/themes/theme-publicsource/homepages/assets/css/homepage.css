@@ -75,6 +75,26 @@
   src: url(../assets/Muli-Bold.ttf);
   font-weight: bold;
 }
+.twocolumn {
+  display: block;
+  width: 48.93617021%;
+  min-height: 28px;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+}
+.twocolumn:nth-child( 2n ) {
+  margin-left: 2.12765957%;
+}
+.twocolumn:nth-child( 2n + 1 ) {
+  clear: left;
+}
+.onecolumn {
+  clear: both;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
 @media (max-width: 767px) {
   #header-ad-zone-container aside {
     margin-top: 24px;
@@ -116,6 +136,15 @@
     background: #ffffff;
     border-color: #02b9ff;
     color: #02b9ff;
+  }
+}
+@media (max-width: 768px) {
+  #homepage-featured > .span8,
+  #homepage-featured > .span4 {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 .top-story {
@@ -181,6 +210,30 @@
   font-size: 12px;
   line-height: 2;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  #home-recent-grid .span4 {
+    display: block;
+    width: 48.93617021%;
+    min-height: 28px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+  }
+  #home-recent-grid .span4:nth-child( 2n ) {
+    margin-left: 2.12765957%;
+  }
+  #home-recent-grid .span4:nth-child( 2n + 1 ) {
+    clear: left;
+  }
+}
+@media (max-width: 480px) {
+  #home-recent-grid .span4 {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 #home-middle-feature {
   text-align: center;
 }
@@ -211,11 +264,32 @@
 #home-category-grid .widget ul li:nth-child(2) a img {
   display: none;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  #home-category-grid .span3 {
+    display: block;
+    width: 48.93617021%;
+    min-height: 28px;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 0;
+  }
+  #home-category-grid .span3:nth-child( 2n ) {
+    margin-left: 2.12765957%;
+  }
+  #home-category-grid .span3:nth-child( 2n + 1 ) {
+    clear: left;
+  }
+}
+@media (max-width: 480px) {
+  #home-category-grid .span3 {
+    clear: both;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 #home-bottom-feature .widget {
   text-align: center;
-}
-#home-bottom-feature .widget .widgettitle {
-  font-size: 1.3em;
 }
 @media (min-width: 769px) {
   #home-bottom-feature .largo-recent-posts li {
@@ -224,6 +298,7 @@
     min-height: 28px;
     box-sizing: border-box;
     float: left;
+    margin-left: 0;
   }
   #home-bottom-feature .largo-recent-posts li:nth-child( 2n ) {
     margin-left: 2.12765957%;
