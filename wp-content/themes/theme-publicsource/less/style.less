@@ -1,5 +1,11 @@
-@import "vars.less";
+// The basics, imported from Largo via Gruntfile.js
+@import "variables.less";
 @import "mixins.less";
+@import "typography.less";
+
+// PS Custom variables
+@import "_vars.less";
+@import "_mixins.less";
 
 * {
   box-sizing:border-box;
@@ -30,21 +36,21 @@
     font-family: @sans-bold;
     text-transform: uppercase;
 
-    &:hover {
-      border-color:@primary;
-      color:@primary;
-      cursor:pointer;
-    }
-
-    &.secondary {
-      border-color:@secondary;
-      color:@secondary;
-
       &:hover {
-        border-color:@black;
-        color:@black;
+        border-color:@primary;
+        color:@primary;
+        cursor:pointer;
       }
-    }
+
+      &.secondary {
+        border-color:@secondary;
+        color:@secondary;
+
+        &:hover {
+          border-color:@black;
+          color:@black;
+        }
+      }
     }
 
     .textwidget {

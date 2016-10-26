@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     less: {
       compile: {
         options: {
-          paths: ['less'],
+          paths: ['less', '../largo/less/inc'],
           outputSourceFiles: true,
           sourceMapBasepath: path,
         },
