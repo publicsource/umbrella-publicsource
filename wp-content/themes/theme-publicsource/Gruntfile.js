@@ -91,6 +91,6 @@ module.exports = function(grunt) {
 
   // Build assets, docs and language files
   grunt.registerTask('build', 'Build less files', [
-    'less',
+    'less', 'cssmin',
   ]);
 }

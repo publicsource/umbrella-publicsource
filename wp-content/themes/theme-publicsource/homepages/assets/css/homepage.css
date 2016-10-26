@@ -215,5 +215,20 @@
   text-align: center;
 }
 #home-bottom-feature .widget .widgettitle {
-  display: none;
+  font-size: 1.3em;
+}
+@media (min-width: 769px) {
+  #home-bottom-feature .largo-recent-posts li {
+    display: block;
+    width: 48.93617021%;
+    min-height: 28px;
+    box-sizing: border-box;
+    float: left;
+  }
+  #home-bottom-feature .largo-recent-posts li:nth-child( 2n ) {
+    margin-left: 2.12765957%;
+  }
+  #home-bottom-feature .largo-recent-posts li:nth-child( 2n + 1 ) {
+    clear: left;
+  }
 }

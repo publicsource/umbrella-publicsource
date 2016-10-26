@@ -39,8 +39,8 @@ function publicsource_add_homepage_widget_areas() {
 		array(
 			'name' => __('Home Bottom Feature', 'rr'),
 			'id' => 'home-bottom-feature',
-			'description' => __( 'This area should be filled with two Largo Recent Posts widgets.', 'rr' ),
-			'before_widget' => '<aside id="%1$s" class="%2$s span6 clearfix">',
+			'description' => __( 'This area should be filled with one Largo Recent Posts widgets.', 'rr' ),
+			'before_widget' => '<aside id="%1$s" class="%2$s clearfix">',
 			'after_widget' => "</aside>",
 			'before_title' => '<h3 class="widgettitle">',
 			'after_title' => '</h3>',
