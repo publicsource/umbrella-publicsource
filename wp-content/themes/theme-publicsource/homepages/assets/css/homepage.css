@@ -1,22 +1,22 @@
 .heading-treatment {
   text-align: center;
-  font-family: 'WorkSans-Bold', sans-serif;
+  font-family: 'tk-mallory-n7', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 2em;
 }
 .heading-treatment span {
-  border-bottom: 4px solid #2bace2;
+  border-bottom: 4px solid #418cff;
   padding-bottom: .25em;
 }
 .button-styles button {
-  background: #2bace2;
+  background: #418cff;
   border: 4px solid transparent;
   line-height: 1;
   padding: 1em 1.5em;
   color: #ffffff;
-  font-family: 'WorkSans-Bold', sans-serif;
+  font-family: 'tk-mallory-n7', sans-serif;
   text-transform: uppercase;
 }
 .button-styles button a,
@@ -24,7 +24,7 @@
   color: #ffffff;
 }
 .button-styles button:hover {
-  background: #0eb8ff;
+  background: #418cff;
 }
 .button-styles button.secondary {
   background: #fb4834;
@@ -40,13 +40,13 @@
 }
 .button-styles button.alt2 {
   background: #ffffff;
-  border-color: #2bace2;
-  color: #2bace2;
+  border-color: #418cff;
+  color: #418cff;
 }
 .button-styles button.alt2:hover {
   background: #ffffff;
-  border-color: #0eb8ff;
-  color: #0eb8ff;
+  border-color: #418cff;
+  color: #418cff;
 }
 .prominence-sponsored-tag {
   content: 'sponsored';
@@ -59,7 +59,7 @@
 .prominence-commentary-tag {
   content: 'commentary';
   text-transform: uppercase;
-  background-color: #58bee8;
+  background-color: #74abff;
   color: #ffffff;
   padding: .25em .5em;
   display: inline-block;
@@ -95,12 +95,12 @@
     margin-top: 24px;
   }
   #header-ad-zone-container aside button {
-    background: #2bace2;
+    background: #418cff;
     border: 4px solid transparent;
     line-height: 1;
     padding: 1em 1.5em;
     color: #ffffff;
-    font-family: 'WorkSans-Bold', sans-serif;
+    font-family: 'tk-mallory-n7', sans-serif;
     text-transform: uppercase;
   }
   #header-ad-zone-container aside button a,
@@ -108,7 +108,7 @@
     color: #ffffff;
   }
   #header-ad-zone-container aside button:hover {
-    background: #0eb8ff;
+    background: #418cff;
   }
   #header-ad-zone-container aside button.secondary {
     background: #fb4834;
@@ -124,13 +124,13 @@
   }
   #header-ad-zone-container aside button.alt2 {
     background: #ffffff;
-    border-color: #2bace2;
-    color: #2bace2;
+    border-color: #418cff;
+    color: #418cff;
   }
   #header-ad-zone-container aside button.alt2:hover {
     background: #ffffff;
-    border-color: #0eb8ff;
-    color: #0eb8ff;
+    border-color: #418cff;
+    color: #418cff;
   }
 }
 @media (max-width: 768px) {
