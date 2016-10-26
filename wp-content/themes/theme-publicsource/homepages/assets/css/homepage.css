@@ -1,6 +1,6 @@
 .heading-treatment {
   text-align: center;
-  font-family: 'WorkSans-Bold', sans-serif;
+  font-family: 'tk-mallory-n7', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   color: #000000;
@@ -16,7 +16,7 @@
   line-height: 1;
   padding: 1em 1.5em;
   color: #ffffff;
-  font-family: 'WorkSans-Bold', sans-serif;
+  font-family: 'tk-mallory-n7', sans-serif;
   text-transform: uppercase;
 }
 .button-styles button a,
@@ -100,7 +100,7 @@
     line-height: 1;
     padding: 1em 1.5em;
     color: #ffffff;
-    font-family: 'WorkSans-Bold', sans-serif;
+    font-family: 'tk-mallory-n7', sans-serif;
     text-transform: uppercase;
   }
   #header-ad-zone-container aside button a,
