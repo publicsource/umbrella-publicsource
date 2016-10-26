@@ -117,28 +117,20 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		);
 		$recent_posts = new WP_Query( $args );
 
-		if ( $recent_posts->have_posts() ) :
+		if ( $recent_posts->have_posts() ) : ?>
+			<div class="row-fluid">
+				<?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); ?>
 
-			$count = 0;
-			?>
-			<?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); ?>
-				<?php if ( 0 == $count%3 ) : ?>
-					<div class="row-fluid">
-				<?php endif; ?>
+						<div class="span4">
+							<a href="<?php the_permalink(); ?>">
+								<?php the_post_thumbnail( 'large' ); ?>
+							</a>
+							<h5 class="top-tag"><?php largo_top_term(); ?></h5>
+							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						</div>
 
-					<div class="span4">
-						<a href="<?php the_permalink(); ?>">
-							<?php the_post_thumbnail( 'large' ); ?>
-						</a>
-						<h5 class="top-tag"><?php largo_top_term(); ?></h5>
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					</div>
-
-				<?php if ( 2 == $count%3 ) : ?>
-					</div>
-				<?php endif; ?>
-				<?php $count++; ?>
-			<?php endwhile; ?>
+				<?php endwhile; ?>
+			</div>
 		<?php endif; // end more featured posts ?>
 </div>
 

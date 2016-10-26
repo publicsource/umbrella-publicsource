@@ -210,6 +210,12 @@
   font-size: 12px;
   line-height: 2;
 }
+@media (min-width: 769px) {
+  #home-recent-grid .span4:nth-child( 3n+1 ) {
+    clear: left;
+    margin-left: 0;
+  }
+}
 @media (min-width: 481px) and (max-width: 768px) {
   #home-recent-grid .span4 {
     display: block;
