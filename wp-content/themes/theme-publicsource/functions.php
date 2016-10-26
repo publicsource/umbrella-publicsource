@@ -29,3 +29,12 @@ function publicsource_stylesheet() {
 	wp_enqueue_style( 'rr', get_stylesheet_directory_uri() . '/css/style' . $suffix . '.css' );
 }
 add_action( 'wp_enqueue_scripts', 'publicsource_stylesheet', 20 );
+
+/**
+ * Include TypeKit fonts
+ */
+function publicsource_typekit() { ?>
+	<script src="https://use.typekit.net/eve5vcp.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<?php }
+add_action( 'wp_head', 'publicsource_typekit' );
