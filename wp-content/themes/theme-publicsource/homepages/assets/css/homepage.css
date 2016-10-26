@@ -1,6 +1,6 @@
 .heading-treatment {
   text-align: center;
-  font-family: 'Muli-Bold', sans-serif;
+  font-family: 'WorkSans-Bold', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   color: #000000;
@@ -16,7 +16,7 @@
   line-height: 1;
   padding: 1em 1.5em;
   color: #ffffff;
-  font-family: 'Muli-Bold', sans-serif;
+  font-family: 'WorkSans-Bold', sans-serif;
   text-transform: uppercase;
 }
 .button-styles button a,
@@ -70,11 +70,6 @@
 .prominence-smaller-tag {
   font-size: 10px;
 }
-@font-face {
-  font-family: MuliBold;
-  src: url(../assets/Muli-Bold.ttf);
-  font-weight: bold;
-}
 .twocolumn {
   display: block;
   width: 48.93617021%;
@@ -105,7 +100,7 @@
     line-height: 1;
     padding: 1em 1.5em;
     color: #ffffff;
-    font-family: 'Muli-Bold', sans-serif;
+    font-family: 'WorkSans-Bold', sans-serif;
     text-transform: uppercase;
   }
   #header-ad-zone-container aside button a,
