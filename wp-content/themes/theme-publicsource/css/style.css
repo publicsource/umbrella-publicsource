@@ -513,3 +513,14 @@ hr {
 #site-header a:first-of-type button {
   margin-right: 1em;
 }
+#main-nav.navbar {
+  border-bottom: none;
+}
+#top-nav {
+  text-transform: uppercase;
+}
+.navbar .nav > li > a {
+  color: #000000;
+  font-family: 'tk-mallory-n7', sans-serif;
+  font-weight: 700;
+}
