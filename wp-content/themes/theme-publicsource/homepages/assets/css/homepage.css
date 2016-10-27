@@ -211,12 +211,20 @@
   position: absolute;
   top: 0;
   background: #000;
+  font-family: 'tk-mallory-n4', sans-serif;
 }
 #home-recent-grid .span4 h5.top-tag a {
   color: #fff;
   padding: .25em .5em;
   font-size: 12px;
   line-height: 2;
+}
+#home-recent-grid .span4 h3 {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+#home-recent-grid .span4 h3 a {
+  color: #000000;
 }
 @media (min-width: 769px) {
   #home-recent-grid .span4:nth-child( 3n+1 ) {
@@ -286,6 +294,13 @@
 }
 #home-category-grid .widget ul li:nth-child(2) a img {
   display: none;
+}
+#home-category-grid .widget h5 {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+#home-category-grid .widget h5 a {
+  color: #000000;
 }
 @media (min-width: 481px) and (max-width: 768px) {
   #home-category-grid .span3 {
