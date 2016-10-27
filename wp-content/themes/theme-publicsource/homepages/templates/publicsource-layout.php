@@ -147,20 +147,21 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	$posts = new WP_Query( $args );
 
 	if ( $posts->have_posts() ) :
-
-		$count = 0;
+		while ( $posts->have_posts() ) : $posts->the_post(); $shown_ids[] = get_the_ID(); 
 		?>
-		<?php while ( $posts->have_posts() ) : $posts->the_post(); $shown_ids[] = get_the_ID(); ?>
-			<div class="row-fluid">
-				<div class="span12">
+			<div class="span8">
 					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail( 'full' ); ?>
+						<?php the_post_thumbnail( 'large' ); ?>
 					</a>
-					<h5 class="top-tag"><?php largo_top_term(); ?></h5>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
 				</div>
-			</div>
+				<div class="span4">
+					<div class="post-lead">
+						<h5 class="top-tag"><?php largo_top_term(); ?></h5>
+						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
+						<?php largo_excerpt(); ?>
+					</div>
+				</div>		
 		<?php 
 			$count++; 
 		endwhile;
