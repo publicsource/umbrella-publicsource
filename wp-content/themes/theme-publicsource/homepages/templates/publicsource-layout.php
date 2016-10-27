@@ -26,14 +26,17 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		if ( $topstory->have_posts() ) :
 			while ( $topstory->have_posts() ) : $topstory->the_post(); $shown_ids[] = get_the_ID();
 		?>
+				<h5 class="top-tag"><?php largo_top_term(); ?></h5>
 				<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail( 'large' ); ?>
 				</a>
 				<div class="has-thumbnail">
-					<a class="clickable" href="<?php the_permalink(); ?>"></a>
+					<a href="<?php the_permalink(); ?>" class="clickable"></a>
 					<div class="has-thumbnail-inner">
-						<h2><?php the_title(); ?></h2>
-						<section class="excerpt"><?php largo_excerpt( $post, 4, false ); ?></section>
+						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<section class="excerpt">
+							<?php largo_excerpt( $post, 4, false ); ?>
+						</section>
 						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
 					</div>
 				</div>

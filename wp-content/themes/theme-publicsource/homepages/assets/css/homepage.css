@@ -185,6 +185,13 @@
   margin-bottom: .3em;
   line-height: 1.25;
 }
+.top-story .has-thumbnail .has-thumbnail-inner h2 a {
+  color: #ffffff;
+}
+.top-story .has-thumbnail .has-thumbnail-inner h2 a:hover {
+  color: #418cff;
+  text-decoration: none;
+}
 .top-story .has-thumbnail .has-thumbnail-inner .excerpt p {
   font-size: 1em;
 }

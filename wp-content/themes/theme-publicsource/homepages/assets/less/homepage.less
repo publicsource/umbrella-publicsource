@@ -81,11 +81,17 @@
     .has-thumbnail-inner {
       position: relative;
       z-index: 1;
-
       h2 {
         font-size: 32px;
         margin-bottom: .3em;
         line-height: 1.25;
+        a {
+	      color: @white;
+	      &:hover {
+		    color: @primary;
+		    text-decoration: none;  
+	      }
+        }
       }
 
       .excerpt p {
