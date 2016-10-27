@@ -276,6 +276,9 @@
 #home-middle-feature h3 {
   margin-bottom: .5em;
 }
+#home-middle-feature h3 a {
+  color: #000000;
+}
 #home-category-grid h3.widgettitle {
   border-top: 10px #418cff solid;
   font-family: 'tk-mallory-n7', sans-serif;
