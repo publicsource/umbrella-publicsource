@@ -538,3 +538,6 @@ hr {
   color: #000000;
   font-family: 'tk-mallory-n7', sans-serif;
 }
+.byline .by {
+  display: none;
+}

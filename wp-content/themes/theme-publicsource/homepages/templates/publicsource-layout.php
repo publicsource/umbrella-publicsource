@@ -170,8 +170,6 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	<?php endif; // end more featured posts ?>
 </div>
 
-<hr />
-
 <div id="home-category-grid">
 	<div class="row-fluid">
 		<?php if ( !dynamic_sidebar( 'Home Category Grid' ) ) { ?>
@@ -179,8 +177,6 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		<?php } ?>
 	</div>
 </div>
-
-<hr />
 
 <div id="home-bottom-feature">
 	<div class="row-fluid">
