@@ -257,3 +257,56 @@
     display: none;
   }
 }
+
+// Mailchimp signup form styles
+#mc_embed_signup {
+  display: table-cell;
+  vertical-align: middle;
+
+  @scaling: 36px;
+
+  .visuallyhidden {
+    display: none;
+  }
+  label {
+    display: inline-block;
+    background-color: @black;
+    color: @white;
+    padding: 0 @scaling/2;
+    line-height: @scaling;
+    font-size: ( @scaling *2/3 );
+    font-family: @ps_sans;
+    white-space: nowrap;
+    margin-right: @scaling * 1.5;
+    margin-bottom: 0;
+
+    &:after {
+      border-top: @scaling/2 transparent solid;
+      border-bottom: @scaling/2 transparent solid;
+      border-left: @scaling/2 @black solid;
+      margin-right: @scaling/-1;
+      content: '';
+      height: 0;
+      max-height: 0;
+      line-height: 0;
+      width: 0;
+      max-width: 0;
+      box-sizing: content-box;
+    }
+  }
+  input {
+    margin: 0;
+  }
+  input[type=submit] {
+    background-color: @black;
+    border-color: @black;
+    border-style: solid;
+    border-width: 4px;
+    font-family: @ps_sans_bold;
+    color: @primary;
+
+    &:hover {
+      background-color: @white;
+    }
+  }
+}

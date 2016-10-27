@@ -28,18 +28,27 @@ add_action('init', 'register_my_custom_homepage_layout', 0);
 function publicsource_add_homepage_widget_areas() {
 	$sidebars = array(
 		array(
-			'name' => __('Home Category Grid', 'rr'),
+			'name' => __('Home Below Top Stories', 'publicsource'),
+			'id' => 'home-below-topstory',
+			'description' => __( 'This area should be used by a newsletter signup widget, or other such call to action', 'rr' ),
+			'before_widget' => '<aside id="%1$s" class="%2$s clearfix home-below-topstory">',
+			'after_widget' => "</aside>",
+			'before_title' => '<h3 class="widgettitle">',
+			'after_title' => '</h3>',
+		),
+		array(
+			'name' => __('Home Category Grid', 'publicsource'),
 			'id' => 'home-category-grid',
-			'description' => __( 'This area should be filled with two Largo Recent Posts widgets.', 'rr' ),
+			'description' => __( 'This area should be filled with two Largo Recent Posts widgets.', 'publicsource' ),
 			'before_widget' => '<aside id="%1$s" class="%2$s span3 clearfix">',
 			'after_widget' => "</aside>",
 			'before_title' => '<h3 class="widgettitle">',
 			'after_title' => '</h3>',
 		),
 		array(
-			'name' => __('Home Bottom Feature', 'rr'),
+			'name' => __('Home Bottom Feature', 'publicsource'),
 			'id' => 'home-bottom-feature',
-			'description' => __( 'This area should be filled with one Largo Recent Posts widgets.', 'rr' ),
+			'description' => __( 'This area should be filled with one Largo Recent Posts widgets.', 'publicsource' ),
 			'before_widget' => '<aside id="%1$s" class="%2$s clearfix">',
 			'after_widget' => "</aside>",
 			'before_title' => '<h3 class="widgettitle">',
