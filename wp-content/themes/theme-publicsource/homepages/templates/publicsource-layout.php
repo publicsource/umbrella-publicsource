@@ -26,7 +26,6 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		if ( $topstory->have_posts() ) :
 			while ( $topstory->have_posts() ) : $topstory->the_post(); $shown_ids[] = get_the_ID();
 		?>
-				<h5 class="top-tag"><?php largo_top_term(); ?></h5>
 				<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail( 'large' ); ?>
 				</a>
