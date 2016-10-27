@@ -5,8 +5,8 @@ include_once get_template_directory() . '/homepages/homepage-class.php';
 class PublicSourceLayout extends Homepage {
 	function __construct($options=array()) {
 		$defaults = array(
-			'name' => __('PublicSource.org Custon Layout', 'largo'),
-			'description' => __('', 'largo'),
+			'name' => __( 'PublicSource.org Custom Layout', 'largo' ),
+			'description' => __( 'A custom homepage layout for PublicSource based loosely on the Largo top stories homepage layout', 'largo' ),
 			'template' => get_stylesheet_directory() . '/homepages/templates/publicsource-layout.php',
 			'assets' => array(
 				array( 'homepage-single', get_stylesheet_directory_uri() . '/homepages/assets/css/homepage' . $suffix . '.css', array() ),
