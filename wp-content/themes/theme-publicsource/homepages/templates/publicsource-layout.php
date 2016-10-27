@@ -68,9 +68,8 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 			<?php
 				$count++;
 			endwhile;
-		endif; // end more featured posts ?>
+		endif; // end more featured posts 
 
-		<?php
 		// If not enough featured posts, backfill with recent posts
 		if ( $count < 4 ) :
 			$args = array (
@@ -80,8 +79,8 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 			$recent_posts = new WP_Query( $args );
 
 			if ( $recent_posts->have_posts() ) :
+				while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); 
 				?>
-				<?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); ?>
 					<div <?php post_class( 'story' ); ?> >
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
@@ -90,14 +89,15 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 					$count++; 
 				endwhile; 
 			endif; // end more featured posts 
-		endif; // end if $count < 3 ?>
+		endif; // end if $count < 3
+		?>
 	</div>
 </div>
 
 <hr />
 
 <?php
-	dynamic_sidebar( __('Home Below Top Stories', 'publicsource') );
+	dynamic_sidebar( __( 'Home Below Top Stories', 'publicsource' ) );
 ?>
 
 <hr />
@@ -158,9 +158,11 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 					<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
 				</div>
 			</div>
-			<?php $count++; ?>
-		<?php endwhile; ?>
-	<?php endif; // end more featured posts ?>
+		<?php 
+			$count++; 
+		endwhile;
+	endif; // end more featured posts 
+	?>
 </div>
 
 <div id="home-category-grid">
