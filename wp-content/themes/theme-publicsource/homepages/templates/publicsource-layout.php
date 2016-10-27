@@ -37,16 +37,7 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
 					</div>
 				</div>
-				<?php if ( largo_post_in_series() ):
-					$feature = largo_get_the_main_feature();
-					$feature_posts = largo_get_recent_posts_for_term( $feature, 1, 1 );
-					if ( $feature_posts ):
-						foreach ( $feature_posts as $feature_post ): ?>
-
-							<h4 class="related-story"><?php _e('Related:', 'largo'); ?> <a href="<?php echo esc_url( get_permalink( $feature_post->ID ) ); ?>"><?php echo get_the_title( $feature_post->ID ); ?></a></h4>
-						<?php endforeach;
-					endif;
-				endif;
+		<?php
 			endwhile;
 		endif; // end top story ?>
 	</div>
@@ -69,17 +60,12 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		if ( $substories->have_posts() ) :
 			$count = 0;
 			while ( $substories->have_posts() ) : $substories->the_post(); $shown_ids[] = get_the_ID();
-				if ( $count <= 3 ) : ?>
-					<div <?php post_class( 'story' ); ?> >
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
-					</div>
-				<?php elseif ( $count == 4 ) : ?>
-					<h4 class="subhead"><?php _e('More Headlines', 'largo'); ?></h4>
-					<h5 class="byline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-				<?php else : ?>
-					<h5 class="byline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
-				<?php endif;
+			?>	
+				<div <?php post_class( 'story' ); ?> >
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
+				</div>
+			<?php
 				$count++;
 			endwhile;
 		endif; // end more featured posts ?>
@@ -100,10 +86,11 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
 					</div>
-					<?php $count++; ?>
-				<?php endwhile; ?>
-			<?php endif; // end more featured posts ?>
-		<?php endif; // end if $count < 3 ?>
+				<?php 
+					$count++; 
+				endwhile; 
+			endif; // end more featured posts 
+		endif; // end if $count < 3 ?>
 	</div>
 </div>
 
