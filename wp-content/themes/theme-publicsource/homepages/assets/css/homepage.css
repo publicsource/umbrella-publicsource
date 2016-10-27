@@ -232,7 +232,7 @@
     margin-left: 0;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 800px) {
   #home-recent-grid .span4 {
     display: block;
     width: 48.93617021%;
@@ -305,7 +305,7 @@
 #home-category-grid .widget h5 a {
   color: #000000;
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 900px) {
   #home-category-grid .span3 {
     display: block;
     width: 48.93617021%;
