@@ -526,3 +526,15 @@ hr {
   font-family: 'tk-mallory-n7', sans-serif;
   font-weight: 700;
 }
+.alert-wrapper {
+  background-color: #f7f7f7;
+  background: url(../img/dot.png) repeat repeat center center;
+  border: 4px solid #000000;
+}
+.alert-wrapper #alert-container {
+  padding-top: 0px;
+}
+.alert-wrapper #alert-container a {
+  color: #000000;
+  font-family: 'tk-mallory-n7', sans-serif;
+}
