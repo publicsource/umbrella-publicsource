@@ -356,6 +356,9 @@
     clear: left;
   }
 }
+#home-bottom-feature h5 a {
+  color: #000000;
+}
 .byline {
   font-family: 'tk-mallory-n4', sans-serif;
 }
