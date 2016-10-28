@@ -358,6 +358,7 @@ hr {
   .visuallyhidden {
     display: none;
   }
+
   label {
     display: inline-block;
     background-color: @black;
@@ -367,21 +368,25 @@ hr {
     font-size: ( @scaling *2/3 );
     font-family: @ps_sans;
     white-space: nowrap;
-    margin-right: @scaling * 1.5;
+    margin-right:  @scaling * 1;
     margin-bottom: 0;
+    position: relative;
 
     &:after {
-      border-top: @scaling/2 transparent solid;
-      border-bottom: @scaling/2 transparent solid;
-      border-left: @scaling/2 @black solid;
-      margin-right: @scaling/-1;
-      content: '';
+      border-color: transparent transparent transparent @black;
+      border-width: @scaling/2;
+      border-style: solid;
+      //margin-right: @scaling*-2.5;
+      font-size: 0;
       height: 0;
-      max-height: 0;
-      line-height: 0;
       width: 0;
-      max-width: 0;
       box-sizing: content-box;
+      content: '';
+      line-height: 0;
+
+      position: absolute;
+      top: 0;
+      right: @scaling * -1;
     }
   }
   input {

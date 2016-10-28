@@ -511,21 +511,23 @@ hr {
   font-size: 24px;
   font-family: 'tk-mallory-n4', sans-serif;
   white-space: nowrap;
-  margin-right: 54px;
+  margin-right: 36px;
   margin-bottom: 0;
+  position: relative;
 }
 #mc_embed_signup label:after {
-  border-top: 18px transparent solid;
-  border-bottom: 18px transparent solid;
-  border-left: 18px #000000 solid;
-  margin-right: -36px;
-  content: '';
+  border-color: transparent transparent transparent #000000;
+  border-width: 18px;
+  border-style: solid;
+  font-size: 0;
   height: 0;
-  max-height: 0;
-  line-height: 0;
   width: 0;
-  max-width: 0;
   box-sizing: content-box;
+  content: '';
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: -36px;
 }
 #mc_embed_signup input {
   margin: 0;
