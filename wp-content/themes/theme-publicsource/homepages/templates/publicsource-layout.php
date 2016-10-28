@@ -96,11 +96,15 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	</div>
 </div>
 
+<hr />
+
 <div id="home-below-top-stories">
 	<?php
 		dynamic_sidebar( __( 'Home Below Top Stories', 'publicsource' ) );
 	?>
 </div>
+
+<hr />
 
 <div id="home-recent-grid">
 		<?php

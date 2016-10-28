@@ -22,7 +22,9 @@ a {
   }	
 }
 
-
+#header-search input {
+  height: 27px; //why?
+}
 // The buttons in the desktop-width header
 #site-header {
   position: relative;
@@ -37,11 +39,11 @@ a {
     top: 0;
     right: 0;
     button {
-      background: @primary;
+      background: transparent;
       border: 4px solid transparent;
       line-height: 1;
       padding: 0.5em 1em;
-      color: @white;
+      color: @primary;
       font-family: @ps_sans;
       text-transform: uppercase;
       &:hover {
@@ -51,6 +53,7 @@ a {
         cursor: pointer;
       }
       &.secondary {
+        color: @white;
         border-color: @black;
         background-color: @black;
         &:hover {
@@ -92,7 +95,7 @@ a {
 .alert-wrapper {
   background-color: #f7f7f7;
   background: url(../img/dot.png) repeat repeat center center;
-  border: 3px solid @black;
+  border: 1px solid @black;
   #alert-container {
     padding-top: 0px;
     a {
@@ -107,6 +110,7 @@ a {
 }
 
 hr {
+  clear: both;
   border-top: 1px solid @neutral3;
   border-bottom: none;
 }
