@@ -6,9 +6,12 @@
 @import "_vars.less";
 @import "_mixins.less";
 
-// Use the PS custom variables to change largo defaults
-@import "typography.less";
-
+body {
+  font-family: @ps_serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: @ps_sans_bold;
+}
 * {
   box-sizing:border-box;
 }
@@ -16,11 +19,11 @@
 // The buttons in the desktop-width header
 #site-header {
   position: relative;
-  min-height:40px;
-  margin-top:1em;
+  min-height: 40px;
+  margin-top: 1em;
 
   img {
-    max-width:700px;
+    max-width: 700px;
   }
 
   aside {
@@ -33,7 +36,7 @@
     background: @white;
     border: 4px solid transparent;
     line-height: 1;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     color: @neutral2;
     font-family: @ps_sans;
     text-transform: uppercase;
@@ -50,9 +53,9 @@
         color: @white;
 
         &:hover {
-          border-color:@black;
+          border-color: @black;
           background-color: @white;
-          color:@black;
+          color: @black;
         }
       }
     }
@@ -62,7 +65,7 @@
     }
   }
   a:hover {
-  border-bottom:none;
+    border-bottom:none;
   }
 
   a:first-of-type button {
@@ -78,7 +81,7 @@
 }
 .navbar .nav > li > a {
   color: @black;
-  font-family: @ps_sans_bold;
+  font-family: @ps_sans;
   font-weight: 700;
 }
 
