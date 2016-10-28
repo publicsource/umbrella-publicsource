@@ -492,8 +492,8 @@ hr {
   display: none;
 }
 #mc_embed_signup form {
-  display: table-cell;
   vertical-align: middle;
+  width: 100%;
 }
 #mc_embed_signup .visuallyhidden {
   display: none;
