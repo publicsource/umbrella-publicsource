@@ -344,8 +344,10 @@ hr {
 
 // Mailchimp signup form styles
 #mc_embed_signup {
-  display: table-cell;
-  vertical-align: middle;
+  form {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
   @scaling: 36px;
 
@@ -384,6 +386,7 @@ hr {
     }
   }
   input {
+    display: inline-block;
     margin: 0;
   }
   input[type=submit] {

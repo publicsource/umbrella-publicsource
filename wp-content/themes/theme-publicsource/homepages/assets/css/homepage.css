@@ -491,7 +491,7 @@ hr {
 .byline .job-title {
   display: none;
 }
-#mc_embed_signup {
+#mc_embed_signup form {
   display: table-cell;
   vertical-align: middle;
 }
@@ -526,6 +526,7 @@ hr {
   right: -36px;
 }
 #mc_embed_signup input {
+  display: inline-block;
   margin: 0;
 }
 #mc_embed_signup input[type=submit] {
