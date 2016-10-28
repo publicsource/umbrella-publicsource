@@ -26,7 +26,7 @@ add_action( 'after_setup_theme', 'largo_child_require_files' );
 function publicsource_stylesheet() {
 	wp_dequeue_style( 'largo-child-styles' );
 	$suffix = (LARGO_DEBUG)? '' : '.min';
-	wp_enqueue_style( 'rr', get_stylesheet_directory_uri() . '/css/style' . $suffix . '.css' );
+	wp_enqueue_style( 'publicsource', get_stylesheet_directory_uri() . '/css/style' . $suffix . '.css' );
 }
 add_action( 'wp_enqueue_scripts', 'publicsource_stylesheet', 20 );
 
