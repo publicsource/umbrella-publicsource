@@ -224,7 +224,7 @@ h5 {
   right: 0;
 }
 #site-header aside button {
-  background: #ffffff;
+  background: #418cff;
   border: 4px solid transparent;
   line-height: 1;
   padding: 0.5em 1em;
@@ -262,15 +262,18 @@ h5 {
 #top-nav {
   text-transform: uppercase;
 }
+.navbar .nav > li:first-child a {
+  padding-left: 0;
+}
 .navbar .nav > li > a {
   color: #000000;
-  font-family: 'tk-mallory-n4', sans-serif;
-  font-weight: 700;
+  font-family: 'tk-mallory-n7', sans-serif;
+  font-size: 15px;
 }
 .alert-wrapper {
   background-color: #f7f7f7;
   background: url(../img/dot.png) repeat repeat center center;
-  border: 4px solid #000000;
+  border: 3px solid #000000;
 }
 .alert-wrapper #alert-container {
   padding-top: 0px;
