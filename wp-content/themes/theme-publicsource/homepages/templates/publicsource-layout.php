@@ -121,7 +121,6 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 							</a>
 							<h5 class="top-tag"><?php largo_top_term(); ?></h5>
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<?php largo_excerpt(); ?>
 						</div>
 
 				<?php endwhile; ?>

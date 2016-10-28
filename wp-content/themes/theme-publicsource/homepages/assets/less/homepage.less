@@ -24,15 +24,16 @@
   margin-right: 0;
 }
 .homepage-border {
-  border-top: 10px @blue solid;
+  border-top: 8px @blue solid;
 }
 .homepage-section-header {
   .homepage-border;
   font-family: @ps_sans_bold;
+  padding-top: 0.25em;
   color: @black;
   font-weight: 900;
   text-align: left;
-  font-size: 3em;
+  font-size: 2em;
 }
 hr {
   margin: @unit2x 0;
@@ -200,9 +201,6 @@ hr {
         color: @black;
       }
     }
-    p {
-	  font-size: 16px;
-    }
     @media (min-width: 769px) {
 	  &:nth-child( 3n+1 ) {
         clear: left;
@@ -214,9 +212,6 @@ hr {
 	}
 	@media (max-width: 480px) {
 	  .onecolumn; 
-	  p {
-	    display: none;
-	  }
 	}
   }
 }
@@ -242,7 +237,7 @@ hr {
     }
   }
   p {
-    font-size: 15px;
+    font-size: 18px;
   }
   @media (max-width: 769px) {
     .span8,
@@ -269,7 +264,6 @@ hr {
   h3.widgettitle {
     .homepage-section-header;
     border-top: 5px @blue solid;
-    padding-top: 0.25em;
     font-size: 1.3em;
   }
   .widget {
