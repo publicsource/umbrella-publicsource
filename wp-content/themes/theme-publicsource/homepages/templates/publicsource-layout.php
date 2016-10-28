@@ -146,25 +146,27 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	if ( $posts->have_posts() ) :
 		while ( $posts->have_posts() ) : $posts->the_post(); $shown_ids[] = get_the_ID(); 
 		?>
+			<div class="top-tag-wrap"><h5 class="top-tag"><?php _e( 'Featured Story', 'publicsource' ) ?></h5></div>
 			<div class="span8">
-					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail( 'large' ); ?>
-					</a>
+				<a href="<?php the_permalink(); ?>">
+					<?php the_post_thumbnail( 'large' ); ?>
+				</a>
+			</div>
+			<div class="span4">
+				<div class="post-lead">
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
+					<?php largo_excerpt(); ?>
 				</div>
-				<div class="span4">
-					<div class="post-lead">
-						<h5 class="top-tag"><?php largo_top_term(); ?></h5>
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
-						<?php largo_excerpt(); ?>
-					</div>
-				</div>		
+			</div>		
 		<?php 
 			$count++; 
 		endwhile;
 	endif; // end more featured posts 
 	?>
 </div>
+
+<hr />
 
 <div id="home-category-grid">
 	<div class="row-fluid">
@@ -173,6 +175,8 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		<?php } ?>
 	</div>
 </div>
+
+<hr />
 
 <div id="home-bottom-feature">
 	<div class="row-fluid">

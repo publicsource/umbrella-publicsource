@@ -209,6 +209,12 @@ h5 {
 * {
   box-sizing: border-box;
 }
+a {
+  color: #418cff;
+}
+a:hover {
+  color: #0e6dff;
+}
 #site-header {
   position: relative;
   min-height: 40px;
@@ -228,24 +234,24 @@ h5 {
   border: 4px solid transparent;
   line-height: 1;
   padding: 0.5em 1em;
-  color: #6e6e6e;
+  color: #ffffff;
   font-family: 'tk-mallory-n4', sans-serif;
   text-transform: uppercase;
 }
 #site-header aside button:hover {
   border-color: #418cff;
+  background-color: #ffffff;
   color: #418cff;
   cursor: pointer;
 }
 #site-header aside button.secondary {
   border-color: #000000;
   background-color: #000000;
-  color: #ffffff;
 }
 #site-header aside button.secondary:hover {
   border-color: #000000;
-  background-color: #ffffff;
   color: #000000;
+  background-color: #ffffff;
 }
 #site-header aside .textwidget {
   display: table-cell;
