@@ -216,7 +216,10 @@ a:hover {
   color: #0e6dff;
 }
 #header-search input {
-  height: 27px;
+  height: 28px;
+}
+#header-search button {
+  border: none;
 }
 #site-header {
   position: relative;
