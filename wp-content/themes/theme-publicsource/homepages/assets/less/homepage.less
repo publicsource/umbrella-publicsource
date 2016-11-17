@@ -150,14 +150,22 @@ hr {
   }
   h3 {
     margin-bottom: 0.35em;
-    font-family: @ps_book;
+    font-family: @ps_sans;
     font-size: 18px;
     a {
       color: @black;
+      &:hover {
+	    color: @blue;
+	    text-decoration: none;
+      }
     }
   }
   h5.byline {
     font-size: 13px;
+    a:hover {
+	  color: @black;
+	  text-decoration: none;
+    }
   }
   @media (max-width: 480px) {
     .story {
@@ -197,6 +205,12 @@ hr {
         font-size: 12px;
         line-height: 2;
       }
+      &:hover {
+	    background-color: @blue;
+	    a {
+		  text-decoration: none;
+	    }
+      }
     }
     img {
 	  margin-bottom: 0.65em;
@@ -207,6 +221,10 @@ hr {
       font-size: 20px;
       a {
         color: @black;
+        &:hover {
+	      color: @blue;
+	      text-decoration: none;
+        }
       }
     }
     @media (min-width: 769px) {
@@ -246,7 +264,15 @@ hr {
     margin-bottom: 0.5em;
     a {
       color: @black;
+      &:hover {
+	    color: @blue;
+	    text-decoration: none;
+      }
     }
+  }
+  .byline a:hover {
+    color: @black;
+    text-decoration: none;
   }
   p {
     font-size: 18px;
@@ -288,13 +314,27 @@ hr {
       }
     }
     h5 {
-      font-family: @ps_book;
+      font-family: @ps_sans;
       font-size: 18px;
       margin-bottom: 0;
       text-align: left;
       a {
         color: @black;
+        &:hover {
+	      color: @blue;
+	      text-decoration: none;
+        }
       }
+    }
+    p.morelink {
+	  margin-top: -8px;
+	  font-style: italic;
+	  text-align: left;
+	  font-family: @ps_sans;
+	  a:hover {
+	    color: @black;
+	    text-decoration: none;
+	  }
     }
     @media (max-width: 480px) {
 	  margin-bottom: @unit2x;
@@ -337,7 +377,15 @@ hr {
 	font-size: 24px;
     a {
       color: @black;
+      &:hover {
+	    color: @blue;
+	    text-decoration: none;
+      }
     }
+  }
+  .byline a:hover {
+    color: @black;
+    text-decoration: none;
   }
   @media (max-width: 480px) {
     .largo-recent-posts li {

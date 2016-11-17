@@ -12,6 +12,29 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: @ps_sans_bold;
 }
+#boilerplate,
+#header-search button,
+#header-search input,
+#site-footer input,
+#site-footer select,
+#site-footer ul,
+#topics-bar ul,
+.archive-background,
+.related-topics,
+.archive-background .rss-subscribe-link,
+.author-box ul li.author-posts-link,
+.global-nav,
+.labels,
+.navbar,
+.pager,
+.post-social>span,
+.stories h5.tag-list,
+.subscribe,
+.tags,
+.widget.largo-series-posts li a,
+ul.staff-roster .staff-name {
+  font-family: @ps_sans;
+}
 * {
   box-sizing:border-box;
 }
@@ -95,7 +118,15 @@ a {
     font-size: 15px;
   }
 }
-
+#topics-bar ul {
+  font-family: @ps_serif;
+  li {
+    font-size: 17px;
+    &.menu-label {
+	  font-size: 17px;
+    }
+  }
+}
 .alert-wrapper {
   background-color: #f7f7f7;
   background: url(../img/dot.png) repeat repeat center center;
@@ -121,4 +152,7 @@ hr {
 
 .hero {
   background-color: transparent;
+}
+h1.entry-title {
+  color: @black;
 }

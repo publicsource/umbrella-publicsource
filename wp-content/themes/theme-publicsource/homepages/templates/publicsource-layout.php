@@ -33,9 +33,6 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 					<a href="<?php the_permalink(); ?>" class="clickable"></a>
 					<div class="has-thumbnail-inner">
 						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<section class="excerpt">
-							<?php largo_excerpt( $post, 4, false ); ?>
-						</section>
 						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
 					</div>
 				</div>
