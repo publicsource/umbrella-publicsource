@@ -423,8 +423,8 @@ hr {
   font-size: 1.3em;
 }
 #home-category-grid h3.widgettitle a:hover {
-  text-decoration: none;
-  color: #418cff;
+  text-decoration: none !important;
+  color: #418cff !important;
 }
 #home-category-grid .widget {
   text-align: center;
