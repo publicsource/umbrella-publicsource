@@ -153,6 +153,26 @@ hr {
 .hero {
   background-color: transparent;
 }
+
 h1.entry-title {
   color: @black;
+}
+
+.pull-quote, 
+.type-pull-quote {
+  font-family: @ps_sans_bold;
+  font-size: 1.6em;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.09222;
+  padding: 25px 0 20px;
+  border-top: 18px solid #000;
+  border-bottom: 1px solid #418cff;
+}
+
+.pull-quote::after, 
+.pull-quote::before, 
+.type-pull-quote::after, 
+.type-pull-quote::before {
+  display:none;
 }
