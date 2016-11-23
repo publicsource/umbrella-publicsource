@@ -327,6 +327,9 @@ a:hover {
   color: #232323;
   font-family: 'tk-mallory-n7', sans-serif;
 }
+.byline a {
+  color: #418cff;
+}
 .byline .by {
   display: none;
 }
