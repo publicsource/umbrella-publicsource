@@ -25,18 +25,7 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		) );
 		if ( $topstory->have_posts() ) :
 			while ( $topstory->have_posts() ) : $topstory->the_post(); $shown_ids[] = get_the_ID();
-		?>
-				<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail( 'large' ); ?>
-				</a>
-				<div class="has-thumbnail">
-					<a href="<?php the_permalink(); ?>" class="clickable"></a>
-					<div class="has-thumbnail-inner">
-						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
-					</div>
-				</div>
-		<?php
+				get_template_part( 'partials/ps-featured', 'primary' );
 			endwhile;
 		endif; // end top story ?>
 	</div>
@@ -59,12 +48,7 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		if ( $substories->have_posts() ) :
 			$count = 0;
 			while ( $substories->have_posts() ) : $substories->the_post(); $shown_ids[] = get_the_ID();
-			?>	
-				<div <?php post_class( 'story' ); ?> >
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
-				</div>
-			<?php
+				get_template_part( 'partials/ps-featured', 'secondary' );
 				$count++;
 			endwhile;
 		endif; // end more featured posts 
@@ -78,13 +62,8 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 			$recent_posts = new WP_Query( $args );
 
 			if ( $recent_posts->have_posts() ) :
-				while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); 
-				?>
-					<div <?php post_class( 'story' ); ?> >
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						<h5 class="byline"><?php largo_byline( true, true ); ?></h5>
-					</div>
-				<?php 
+				while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID();
+					get_template_part( 'partials/ps-featured', 'secondary' );
 					$count++; 
 				endwhile; 
 			endif; // end more featured posts 
