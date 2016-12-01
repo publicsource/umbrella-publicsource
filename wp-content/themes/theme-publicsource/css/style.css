@@ -364,6 +364,9 @@ a {
 a:hover {
   color: #0e6dff;
 }
+h2 a {
+  color: #232323;
+}
 #header-search input {
   height: 28px;
 }
