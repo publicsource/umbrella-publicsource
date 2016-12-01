@@ -322,6 +322,12 @@
     font-size: 18px;
   }
 }
+/*
+ * Styles for archives and topic pages
+ */
+.archive .byline .job-title {
+  display: none;
+}
 body {
   font-family: 'tk-crimson-n5', serif;
 }
