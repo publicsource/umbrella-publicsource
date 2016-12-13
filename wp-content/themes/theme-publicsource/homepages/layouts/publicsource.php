@@ -8,6 +8,13 @@ class PublicSourceLayout extends Homepage {
 			'name' => __( 'PublicSource.org Custom Layout', 'publicsource' ),
 			'description' => __( 'A custom homepage layout for PublicSource based loosely on the Largo top stories homepage layout', 'publicsource' ),
 			'template' => get_stylesheet_directory() . '/homepages/templates/publicsource-layout.php',
+			'prominenceTerms' 	=> array(
+				array(
+					'name' 			=> __( 'Homepage Top Story', 'largo' ),
+					'description' 	=> __( 'If you are using the Newspaper or Carousel optional homepage layout, add this label to a post to make it the top story on the homepage', 'largo' ),
+					'slug' 			=> 'top-story'
+				),
+			),
 			'assets' => array(
 				array( 'homepage-single', get_stylesheet_directory_uri() . '/homepages/assets/css/homepage' . $suffix . '.css', array() ),
 			)
