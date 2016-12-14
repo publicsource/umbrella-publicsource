@@ -526,6 +526,11 @@
     margin-right: 0;
   }
 }
+.byline .avatar {
+  border-radius: 50%;
+  border: 1px solid #7d8185;
+  vertical-align: middle;
+}
 body {
   font-family: 'tk-crimson-n5', serif;
 }
