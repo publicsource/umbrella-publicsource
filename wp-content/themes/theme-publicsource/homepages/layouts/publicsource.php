@@ -15,6 +15,11 @@ class PublicSourceLayout extends Homepage {
 					'slug' 			=> 'top-story'
 				),
 				array(
+					'name' 			=> __( 'Homepage Middle Feature', 'largo' ),
+					'description' 	=> __( 'Posts assigned to this prominence term should appear in the Featured area in the middle of the homepage.', 'largo' ),
+					'slug' 			=> 'home-middle-feature'
+				),
+				array(
 					'name' 			=> __( 'Homepage Bottom Feature', 'largo' ),
 					'description' 	=> __( 'Posts assigned to this prominence term should appear in the Largo Recent Posts widget in the Home Bottom Feature widget area.', 'largo' ),
 					'slug' 			=> 'home-bottom-feature'
