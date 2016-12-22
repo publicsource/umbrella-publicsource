@@ -526,10 +526,597 @@
     margin-right: 0;
   }
 }
+/*------------------------------------------------------------------------------
+  Single - Styling for single posts & pages.
+------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------
+  1.0 - Normal layout overrides (override two column display)
+------------------------------------------------------------------------------*/
+body.normal.single-post,
+body.normal.page {
+  /* 1.1 - Header */
+  /* 1.2 - Hero */
+  /* 1.3 - Sidebar (right of post) */
+  /* 1.4 - Entry Content (the main post content) */
+  /* 1.5 - Article Bottom (after post content) */
+  /* 1.6 - Overrides */
+}
+body.normal.single-post article.post > header,
+body.normal.page article.post > header,
+body.normal.single-post article.page > header,
+body.normal.page article.page > header {
+  clear: both;
+  margin: 24px 17.0213%;
+  position: relative;
+}
+body.normal.single-post article.post > header h5.top-tag,
+body.normal.page article.post > header h5.top-tag,
+body.normal.single-post article.page > header h5.top-tag,
+body.normal.page article.page > header h5.top-tag {
+  position: absolute;
+  left: 0;
+}
+body.normal.single-post article.post > header h1,
+body.normal.page article.post > header h1,
+body.normal.single-post article.page > header h1,
+body.normal.page article.page > header h1 {
+  padding-top: 26px;
+}
+body.normal.single-post article.post > header .sep,
+body.normal.page article.post > header .sep,
+body.normal.single-post article.page > header .sep,
+body.normal.page article.page > header .sep {
+  display: none;
+}
+body.normal.single-post article.post > header .edit-link,
+body.normal.page article.post > header .edit-link,
+body.normal.single-post article.page > header .edit-link,
+body.normal.page article.page > header .edit-link {
+  padding-left: 5px;
+}
+body.normal.single-post .hero p.wp-caption-text,
+body.normal.page .hero p.wp-caption-text,
+body.normal.single-post .hero p.wp-media-credit,
+body.normal.page .hero p.wp-media-credit {
+  margin: 0 17.0213% 12px;
+}
+body.normal.single-post.single #main #sidebar,
+body.normal.page.single #main #sidebar {
+  /* all to undo bootstrap */
+  float: right;
+}
+body.normal.single-post.single #main #sidebar .widget:first-child,
+body.normal.page.single #main #sidebar .widget:first-child {
+  padding-top: 0;
+}
+body.normal.single-post .entry-content,
+body.normal.page .entry-content {
+  padding: 0 17.021276594%;
+}
+body.normal.single-post time .last-modified,
+body.normal.page time .last-modified {
+  color: #bd261d;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+body.normal.single-post p.intro,
+body.normal.page p.intro,
+body.normal.single-post p.wp-caption-text,
+body.normal.page p.wp-caption-text {
+  font-style: normal;
+}
+body.normal.single-post .article-bottom,
+body.normal.page .article-bottom {
+  margin: 0 17.021276594%;
+}
+body.normal.single-post .article-bottom .post-social,
+body.normal.page .article-bottom .post-social {
+  border-top: none;
+  border-bottom: none;
+}
+body.normal.single-post #comments,
+body.normal.page #comments,
+body.normal.single-post #disqus_thread,
+body.normal.page #disqus_thread {
+  margin: 0 17.021276594%;
+}
+@media only screen and (max-width: 979px) {
+  body.normal.single-post .single #main #sidebar,
+  body.normal.page .single #main #sidebar {
+    display: none;
+  }
+  body.normal.single-post .article-bottom,
+  body.normal.page .article-bottom,
+  body.normal.single-post #comments,
+  body.normal.page #comments,
+  body.normal.single-post #disqus_thread,
+  body.normal.page #disqus_thread {
+    margin: 0 6.38297872%;
+  }
+  body.normal.single-post article.post > header,
+  body.normal.page article.post > header {
+    margin: 24px 6.38297872%;
+  }
+  body.normal.single-post .entry-content,
+  body.normal.page .entry-content {
+    padding: 0 6.38297872%;
+  }
+  body.normal.single-post .hero p.wp-caption-text,
+  body.normal.page .hero p.wp-caption-text,
+  body.normal.single-post .hero p.wp-media-credit,
+  body.normal.page .hero p.wp-media-credit {
+    margin: 0 2.12765957% 12px;
+  }
+}
+@media only screen and (max-width: 529px) {
+  body.normal.single-post .article-bottom,
+  body.normal.page .article-bottom,
+  body.normal.single-post #comments,
+  body.normal.page #comments,
+  body.normal.single-post #disqus_thread,
+  body.normal.page #disqus_thread {
+    margin: 0;
+  }
+  body.normal.single-post article.post > header,
+  body.normal.page article.post > header {
+    margin: 24px 0;
+  }
+  body.normal.single-post .entry-content,
+  body.normal.page .entry-content {
+    padding: 0;
+  }
+}
+/*------------------------------------------------------------------------------
+  2.0 - Entry Element Styles
+------------------------------------------------------------------------------*/
+h2.subtitle {
+  font-size: 19.552px;
+  font-weight: normal;
+  color: #7d8185;
+}
+/* 2.1 - Byline */
+.byline {
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 14.64px;
+}
+.byline a {
+  color: #6e6e6e;
+}
+.byline .author,
+.byline .time-ago,
+.byline .edit-link a {
+  /*text-transform: uppercase;*/
+}
+.byline .author {
+  font-weight: bold;
+}
+.byline .time-ago,
+.byline .edit-link a {
+  color: #bd261d;
+}
+.byline .avatar-default {
+  display: none;
+}
 .byline .avatar {
-  border-radius: 50%;
-  border: 1px solid #7d8185;
-  vertical-align: middle;
+  max-height: 19.032px;
+  max-width: 19.032px;
+}
+/* 2.2 - Social media links */
+@media (max-width: 768px) {
+  .post-social > span {
+    min-width: 50px;
+    text-align: center;
+    display: inline-block;
+  }
+}
+@media (min-width: 769px) {
+  .post-social > span {
+    display: inline-block;
+  }
+  .post-social i {
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+  }
+}
+.post-social {
+  margin-bottom: 24px;
+}
+.post-social > span {
+  line-height: 1.5em;
+  max-width: 250px;
+  margin: 0.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: 'tk-mallory-n3', sans-serif;
+  position: relative;
+  font-size: 16px;
+  color: #ffffff;
+}
+.post-social > span:hover {
+  cursor: pointer;
+}
+.post-social > span:last-child {
+  margin-right: 0;
+}
+.post-social > span > a {
+  display: block;
+  padding: 0.3em 1em 0.3em 0.5em;
+}
+@media (max-width: 768px) {
+  .post-social > span > a {
+    padding: 0.3em 0.6em;
+  }
+}
+@media (max-width: 480px) {
+  .post-social > span > a {
+    padding: 0.3em 0.2em;
+  }
+}
+.post-social a {
+  color: #ffffff;
+}
+.post-social a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.post-social i,
+.post-social::before {
+  position: relative;
+}
+.post-social .email:hover {
+  cursor: pointer;
+}
+.post-social .more-social-links {
+  background-color: #f89406;
+  color: #ffffff;
+}
+.post-social .more-social-links:hover {
+  background-color: #fa9f1e;
+}
+.post-social .more-social-links .popover {
+  top: 40px;
+}
+.post-social .more-social-links .popover a {
+  color: #7d8185;
+  position: relative;
+  float: left;
+}
+.post-social .more-social-links .popover a:hover {
+  color: #6e6e6e;
+  text-decoration: underline;
+}
+.post-social .more-social-links .popover i {
+  color: #aaaaaa;
+  margin-right: 0.25em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.post-social .more-social-links .popover ul,
+.post-social .more-social-links .popover li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.post-social .more-social-links .popover li {
+  margin-bottom: 0.5em;
+  float: left;
+}
+.post-social .more-social-links .popover li:last-child {
+  margin-bottom: 0;
+}
+.post-social .more-social-links .popover li span {
+  display: block;
+  margin-left: 28px;
+}
+@media (max-width: 480px) {
+  .post-social .more-social-links .popover {
+    left: auto;
+    right: 0;
+  }
+  .post-social .more-social-links .popover:before,
+  .post-social .more-social-links .popover:after {
+    left: auto;
+  }
+  .post-social .more-social-links .popover:before {
+    right: 19px;
+  }
+  .post-social .more-social-links .popover:after {
+    right: 20px;
+  }
+}
+#floating-social-buttons .rss,
+.largo-follow .rss {
+  background-color: #f89406;
+}
+#floating-social-buttons .rss:hover,
+.largo-follow .rss:hover {
+  background-color: #df8505;
+}
+#floating-social-buttons .twitter,
+.largo-follow .twitter {
+  background-color: #55acee;
+}
+#floating-social-buttons .twitter:hover,
+.largo-follow .twitter:hover {
+  background-color: #3ea1ec;
+}
+#floating-social-buttons .facebook,
+.largo-follow .facebook {
+  background-color: #3a5795;
+}
+#floating-social-buttons .facebook:hover,
+.largo-follow .facebook:hover {
+  background-color: #334c83;
+}
+#floating-social-buttons .linkedin,
+.largo-follow .linkedin {
+  background-color: #007bb6;
+}
+#floating-social-buttons .linkedin:hover,
+.largo-follow .linkedin:hover {
+  background-color: #006a9d;
+}
+#floating-social-buttons .gplus,
+.largo-follow .gplus {
+  background-color: #dd4b39;
+}
+#floating-social-buttons .gplus:hover,
+.largo-follow .gplus:hover {
+  background-color: #d73925;
+}
+#floating-social-buttons .flickr,
+.largo-follow .flickr {
+  background-color: #ff0084;
+}
+#floating-social-buttons .flickr:hover,
+.largo-follow .flickr:hover {
+  background-color: #e60077;
+}
+#floating-social-buttons .youtube,
+.largo-follow .youtube {
+  background-color: #e52d27;
+}
+#floating-social-buttons .youtube:hover,
+.largo-follow .youtube:hover {
+  background-color: #d8201a;
+}
+#floating-social-buttons .instagram,
+.largo-follow .instagram {
+  background-color: #125688;
+}
+#floating-social-buttons .instagram:hover,
+.largo-follow .instagram:hover {
+  background-color: #0f4871;
+}
+#floating-social-buttons .pinterest,
+.largo-follow .pinterest {
+  background-color: #cb2027;
+}
+#floating-social-buttons .pinterest:hover,
+.largo-follow .pinterest:hover {
+  background-color: #b51d23;
+}
+#floating-social-buttons .tumblr,
+.largo-follow .tumblr {
+  background-color: #35465c;
+}
+#floating-social-buttons .tumblr:hover,
+.largo-follow .tumblr:hover {
+  background-color: #2c3a4c;
+}
+#floating-social-buttons .github,
+.largo-follow .github {
+  background-color: #4183c4;
+}
+#floating-social-buttons .github:hover,
+.largo-follow .github:hover {
+  background-color: #3876b4;
+}
+#floating-social-buttons .print,
+.largo-follow .print {
+  background-color: #85898F;
+}
+#floating-social-buttons .print:hover,
+.largo-follow .print:hover {
+  background-color: #787c83;
+}
+#floating-social-buttons .email,
+.largo-follow .email {
+  background-color: #62656F;
+}
+#floating-social-buttons .email:hover,
+.largo-follow .email:hover {
+  background-color: #565961;
+}
+#floating-social-buttons .social-btn,
+.largo-follow .social-btn {
+  line-height: 1.5em;
+  margin: 0.5em 0;
+  padding: 0.66em;
+  color: #ffffff;
+}
+#floating-social-buttons .social-btn:hover,
+.largo-follow .social-btn:hover {
+  color: #ffffff;
+}
+#floating-social-buttons {
+  transition: opacity 0.2s;
+  border: 1px solid #c4c4c4;
+}
+#floating-social-buttons .hidden-phone {
+  display: none;
+}
+#floating-social-buttons .post-social > span {
+  padding-left: -100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+#floating-social-buttons .post-social > span:hover {
+  cursor: pointer;
+}
+#floating-social-buttons .post-social > span > a {
+  color: #c4c4c4;
+  display: block;
+  padding: 18px;
+  min-width: 28px;
+  min-height: 28px;
+}
+#floating-social-buttons .post-social > .email:hover,
+#floating-social-buttons .post-social > span:hover > a {
+  color: #ffffff;
+}
+#floating-social-buttons .twitter,
+#floating-social-buttons .facebook,
+#floating-social-buttons .print,
+#floating-social-buttons .email {
+  color: #c4c4c4;
+  background-color: #ffffff;
+}
+#floating-social-buttons .more-social-links {
+  background-color: #ffffff;
+  color: #c4c4c4;
+}
+#floating-social-buttons .more-social-links a.popped,
+#floating-social-buttons .more-social-links:hover {
+  background-color: #f89406;
+  color: #ffffff;
+}
+#floating-social-buttons .more-social-links .popover {
+  top: 68px;
+  font-size: 14px;
+}
+#floating-social-buttons .more-social-links .popover i {
+  margin-right: 0.25em;
+}
+#floating-social-buttons .more-social-links .popover a {
+  color: #7d8185;
+}
+#floating-social-buttons .more-social-links .popover a:hover {
+  color: #6e6e6e;
+  text-decoration: underline;
+}
+#floating-social-buttons .social-btn {
+  padding: 0.5em;
+}
+#floating-social-buttons .post-social {
+  margin-bottom: 0;
+}
+#floating-social-buttons .post-social a:hover i {
+  opacity: 1;
+}
+#floating-social-buttons .post-social i {
+  margin: 0;
+}
+/* 2.3 - Default WP Post Pagination
+ * ---------------------------------
+ * NOTE: Largo has a widget to handle post pagination, these style default WP output
+ *
+ * @see /less/inc/widgets/largo-prev-next-links.less
+ */
+.post-pagination a,
+.post-pagination span {
+  padding: 5px;
+  font-family: 'tk-mallory-n3', sans-serif;
+  text-transform: uppercase;
+  font-size: 13.04px;
+}
+.post-pagination a:first-child,
+.post-pagination span:first-child {
+  padding-left: 0;
+}
+/* 2.4 - Post meta */
+.labels,
+.tags,
+.pager,
+.tags,
+.pager {
+  list-style: none;
+  font-size: 16px;
+  font-family: 'tk-mallory-n3', sans-serif;
+}
+.single-post .author-box h5,
+.single-argolinkroundups .author-box h5,
+.labels h5 {
+  font-size: 19.2px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.labels .series-label h5 a.rss-link {
+  float: right;
+  margin-top: 4px;
+  color: #f89406;
+  font-size: 18px;
+}
+.labels .series-label h5 a.rss-link:hover {
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+/* 2.5 - Lables */
+.series-label {
+  margin: 5px;
+  padding: 8px;
+}
+.series-label h5 {
+  background: none;
+  padding: 0;
+  margin-bottom: 2px;
+}
+.series-label p {
+  font-size: 13.04px;
+  margin-bottom: 0;
+}
+/**
+ * Styles for the post-leading hero, used in both single-column .normal posts and two-column .classic posts
+ *
+ * @since 0.5.5
+ * @link https://github.com/INN/Largo/issues/934
+ */
+.hero {
+  text-align: center;
+  background-color: #efefef;
+  width: 100%;
+  margin: 0 0 24px;
+}
+.hero.is-gallery {
+  background-color: transparent;
+}
+.hero.is-gallery.span12 {
+  margin-left: 0;
+}
+.hero p.wp-caption-text,
+.hero p.wp-media-credit {
+  float: none;
+  font-size: 14px;
+}
+.hero p.wp-caption-text {
+  text-align: left;
+  margin: 0 12px;
+  padding-bottom: 12px;
+}
+.hero p.wp-media-credit {
+  text-align: right;
+  margin: 4px 12px 4px;
+  min-height: 0;
+}
+.hero.is-embed,
+.hero.is-video {
+  margin-bottom: 24px;
+}
+.hero.is-embed .embed-container,
+.hero.is-video .embed-container {
+  margin-bottom: 0;
+}
+.hero.is-empty {
+  min-height: 0;
+  height: 0;
 }
 body {
   font-family: 'tk-crimson-n5', serif;
@@ -660,6 +1247,7 @@ h2 a {
 }
 .alert-wrapper #alert-container {
   padding-top: 0px;
+  font-family: 'tk-mallory-n7', sans-serif;
 }
 .alert-wrapper #alert-container a {
   color: #418cff;
