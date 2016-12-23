@@ -188,5 +188,30 @@ h1.entry-title {
 .pull-quote::before, 
 .type-pull-quote::after, 
 .type-pull-quote::before {
-  display:none;
+  display: none;
+}
+.widget.largo-donate {
+  text-align: center;
+  .widgettitle {
+    text-transform: none;
+    font-family: @ps_sans;
+    font-size: 1.5em;
+  }
+  .btn {
+    background: none;
+    color: @blue;
+    text-transform: uppercase;
+    font-family: @ps_sans_bold;
+    font-size: 2em;
+    &:hover {
+	  color: lighten(@blue, 10%)
+    }
+  }
+  &.rev {
+    background-color: @black;  
+    .widgettitle {
+	  background-color: @black;
+	  color: @white;
+    }
+  }
 }

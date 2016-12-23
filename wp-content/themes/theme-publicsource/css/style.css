@@ -1287,3 +1287,28 @@ h1.entry-title {
 .type-pull-quote::before {
   display: none;
 }
+.widget.largo-donate {
+  text-align: center;
+}
+.widget.largo-donate .widgettitle {
+  text-transform: none;
+  font-family: 'tk-mallory-n3', sans-serif;
+  font-size: 1.5em;
+}
+.widget.largo-donate .btn {
+  background: none;
+  color: #418cff;
+  text-transform: uppercase;
+  font-family: 'tk-mallory-n7', sans-serif;
+  font-size: 2em;
+}
+.widget.largo-donate .btn:hover {
+  color: #74abff;
+}
+.widget.largo-donate.rev {
+  background-color: #232323;
+}
+.widget.largo-donate.rev .widgettitle {
+  background-color: #232323;
+  color: #ffffff;
+}
