@@ -81,6 +81,15 @@ function publicsource_add_homepage_widget_areas() {
 			'after_title' => '</h3>',
 		),
 		array(
+			'name' => __( 'Homepage Sidebar', 'publicsource' ),
+			'id' => 'homepage-sidebar',
+			'description' => __( 'Primary homepage sidebar, appears next to the grid of four stories below the top stories section', 'publicsource' ),
+			'before_widget' => '<aside id="%1$s" class="%2$s clearfix homepage-sidebar">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h3 class="widgettitle">',
+			'after_title' => '</h3>',
+		),
+		array(
 			'name' => __( 'Home Category Grid', 'publicsource' ),
 			'id' => 'home-category-grid',
 			'description' => __( 'This area should be filled with two Largo Recent Posts widgets.', 'publicsource' ),

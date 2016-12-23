@@ -76,29 +76,36 @@ global $largo, $shown_ids, $tags;
 	?>
 </div>
 
-<div id="home-recent-grid">
-		<?php
-		$args = array (
-			'posts_per_page' => 6,
-			'post__not_in' 	 => $shown_ids
-		);
-		$recent_posts = new WP_Query( $args );
-
-		if ( $recent_posts->have_posts() ) : ?>
-			<div class="row-fluid">
-				<?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); ?>
-
-						<div class="span4">
-							<a href="<?php the_permalink(); ?>">
-								<?php the_post_thumbnail( 'large' ); ?>
-							</a>
-							<h5 class="top-tag"><?php largo_top_term(); ?></h5>
-							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-						</div>
-
-				<?php endwhile; ?>
-			</div>
-		<?php endif; // end more featured posts ?>
+<div class="row-fluid" id="home-recent-grid">
+		<div class="span8">
+			<?php
+			$args = array (
+				'posts_per_page' => 4,
+				'post__not_in' 	 => $shown_ids
+			);
+			$recent_posts = new WP_Query( $args );
+	
+			if ( $recent_posts->have_posts() ) : ?>
+				<div class="row-fluid">
+					<?php while ( $recent_posts->have_posts() ) : $recent_posts->the_post(); $shown_ids[] = get_the_ID(); ?>
+	
+							<div class="span6">
+								<a href="<?php the_permalink(); ?>">
+									<?php the_post_thumbnail( 'large' ); ?>
+								</a>
+								<h5 class="top-tag"><?php largo_top_term(); ?></h5>
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							</div>
+	
+					<?php endwhile; ?>
+				</div>
+			<?php endif; // end more featured posts ?>
+		</div>
+		<div class="span4 sidebar">
+		  <?php
+		    dynamic_sidebar( __( 'Homepage Sidebar', 'publicsource' ) );
+	      ?>
+		</div>
 </div>
 
 <div id="home-interstitial-2" class="interstitial">
