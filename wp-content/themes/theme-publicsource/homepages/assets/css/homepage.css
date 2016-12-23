@@ -160,6 +160,11 @@ hr {
 #homepage-featured {
   margin-bottom: 2em;
 }
+@media (max-width: 480px) {
+  #homepage-featured {
+    margin-bottom: 1em;
+  }
+}
 @media (max-width: 768px) {
   #homepage-featured > .span8,
   #homepage-featured > .span4 {
@@ -240,6 +245,11 @@ hr {
   }
   #home-recent-grid .span4:last-child {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  #home-recent-grid {
+    margin-bottom: 1em;
   }
 }
 #home-middle-feature .top-tag-wrap {
@@ -359,6 +369,11 @@ hr {
   }
   #home-category-grid .widget:last-child {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  #home-category-grid {
+    margin-bottom: 1em;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {

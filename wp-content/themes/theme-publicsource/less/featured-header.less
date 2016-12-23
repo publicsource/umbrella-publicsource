@@ -75,7 +75,7 @@
     margin-bottom: @unit2x;
   }
   @media (max-width: 480px) {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding-bottom: @unit2x;
     border-bottom: 1px solid @neutral3;
     .has-thumbnail-inner h2 {
@@ -113,16 +113,17 @@
   }
   @media (max-width: 480px) {
     .story {
-      padding-bottom: @unit;
+      padding-bottom: @unit/2;
       border-bottom: 1px solid @neutral3;
+      margin-bottom: @unit;
       &:nth-child(4) {
-      margin-bottom: 0;
-      padding-bottom: 0;  
-      border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;  
+        border-bottom: none;
       }
     }
     h3 {
-    font-size: 18px;
+      font-size: 18px;
     }
   }
 }

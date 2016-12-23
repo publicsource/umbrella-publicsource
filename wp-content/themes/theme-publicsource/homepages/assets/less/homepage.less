@@ -39,11 +39,11 @@ hr {
   margin: @unit2x 0;
 }
 .interstitial {
-  margin-bottom: 2em;
+  margin-bottom: @unit2x;
   border-top: 1px solid @neutral3;
   clear: both;
   .widget {
-    padding: 2em 0;
+    padding: @unit2x 0;
     border-bottom: 1px solid @neutral3;
   }
 }
@@ -58,7 +58,10 @@ hr {
   }
 }
 #homepage-featured {
-  margin-bottom: 2em;
+  margin-bottom: @unit2x;
+  @media (max-width: 480px) {
+    margin-bottom: @unit;
+  }
 }
 @media (max-width: 768px) {
   #homepage-featured {
@@ -130,6 +133,9 @@ hr {
 	    margin-bottom: 0;
 	  }
 	}
+  }
+  @media (max-width: 480px) {
+    margin-bottom: @unit;
   }
 }
 
@@ -237,6 +243,9 @@ hr {
 	    margin-bottom: 0;
 	  }
 	}
+  }
+  @media (max-width: 480px) {
+    margin-bottom: @unit;
   }
 }
 @media (min-width: 481px) and (max-width: 900px) {

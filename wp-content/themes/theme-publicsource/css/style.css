@@ -275,7 +275,7 @@
 }
 @media (max-width: 480px) {
   .top-story {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding-bottom: 2em;
     border-bottom: 1px solid #c4c4c4;
   }
@@ -310,8 +310,9 @@
 }
 @media (max-width: 480px) {
   .sub-stories .story {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 1em;
   }
   .sub-stories .story:nth-child(4) {
     margin-bottom: 0;
