@@ -1,16 +1,14 @@
 <?php
 /**
- * Home Template: Top Stories
- * Description: A newspaper-like layout highlighting one Top Story on the left and others to the right. A popular layout choice!
- * Sidebars: Homepage Left Rail (An optional widget area that, when enabled, appears to the left of the main content area on the homepage)
+ * Home Template: PublicSource
+ * Description: Custom homepage template for publicsource.org
  */
 
 global $largo, $shown_ids, $tags;
-$topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') ? 'top-story span12' : 'top-story span8';
 ?>
 <div id="homepage-featured" class="row-fluid clearfix">
 
-	<div <?php post_class( $topstory_classes ); ?>>
+	<div class="top-story span8">
 
 	<?php
 		$topstory = largo_get_featured_posts( array(
