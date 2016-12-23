@@ -72,15 +72,11 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	</div>
 </div>
 
-<hr />
-
-<div id="home-below-top-stories">
+<div id="home-interstitial-1" class="interstitial">
 	<?php
-		dynamic_sidebar( __( 'Home Below Top Stories', 'publicsource' ) );
+		dynamic_sidebar( __( 'Homepage Interstitial 1', 'publicsource' ) );
 	?>
 </div>
-
-<hr />
 
 <div id="home-recent-grid">
 		<?php
@@ -107,7 +103,11 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 		<?php endif; // end more featured posts ?>
 </div>
 
-<hr />
+<div id="home-interstitial-2" class="interstitial">
+	<?php
+		dynamic_sidebar( __( 'Homepage Interstitial 2', 'publicsource' ) );
+	?>
+</div>
 
 <div id="home-middle-feature">
 	<?php
@@ -146,7 +146,11 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	?>
 </div>
 
-<hr />
+<div id="home-interstitial-3" class="interstitial">
+	<?php
+		dynamic_sidebar( __( 'Homepage Interstitial 3', 'publicsource' ) );
+	?>
+</div>
 
 <div id="home-category-grid">
 	<div class="row-fluid">
@@ -156,7 +160,11 @@ $topstory_classes = (largo_get_active_homepage_layout() == 'LegacyThreeColumn') 
 	</div>
 </div>
 
-<hr />
+<div id="home-interstitial-4" class="interstitial">
+	<?php
+		dynamic_sidebar( __( 'Homepage Interstitial 4', 'publicsource' ) );
+	?>
+</div>
 
 <div id="home-bottom-feature">
 	<div class="row-fluid">

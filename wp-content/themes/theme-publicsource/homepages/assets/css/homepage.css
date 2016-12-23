@@ -105,6 +105,15 @@
 hr {
   margin: 2em 0;
 }
+.interstitial {
+  margin-bottom: 2em;
+  border-top: 1px solid #c4c4c4;
+  clear: both;
+}
+.interstitial .widget {
+  padding: 2em 0;
+  border-bottom: 1px solid #c4c4c4;
+}
 @media (max-width: 767px) {
   #header-ad-zone-container aside {
     margin-top: 24px;
