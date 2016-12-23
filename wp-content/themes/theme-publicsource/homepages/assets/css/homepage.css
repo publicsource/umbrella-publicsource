@@ -157,6 +157,9 @@ hr {
     color: #418cff;
   }
 }
+#homepage-featured {
+  margin-bottom: 2em;
+}
 @media (max-width: 768px) {
   #homepage-featured > .span8,
   #homepage-featured > .span4 {
