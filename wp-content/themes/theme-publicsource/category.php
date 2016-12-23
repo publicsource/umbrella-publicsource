@@ -81,7 +81,7 @@ $queried_object = get_queried_object();
 				$counter++;
 			}
 			largo_content_nav( 'nav-below' );
-		} elseif ( count($featured_posts) > 0 ) {
+		} elseif ( count( $featured_posts) > 0 ) {
 			// do nothing
 			// We have n > 1 posts in the featured header
 			// It's not appropriate to display partials/content-not-found here.
