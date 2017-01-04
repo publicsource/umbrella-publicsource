@@ -548,8 +548,7 @@ h5 {
 #site-footer select,
 #site-footer ul,
 #topics-bar ul,
-.archive-background,
-.related-topics,
+.archive-background .related-topics,
 .archive-background .rss-subscribe-link,
 .author-box ul li.author-posts-link,
 .global-nav,
@@ -791,4 +790,15 @@ h1.entry-title {
 }
 .largo-follow .social-btn:hover {
   background-color: #3d3d3d !important;
+}
+.archive-background h1 {
+  margin-bottom: 0.5em;
+  font-family: 'tk-mallory-n7', sans-serif;
+  color: #232323;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  border-bottom: 5px #418cff solid;
 }

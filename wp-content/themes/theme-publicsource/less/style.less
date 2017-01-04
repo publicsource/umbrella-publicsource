@@ -23,8 +23,7 @@ h1, h2, h3, h4, h5 {
 #site-footer select,
 #site-footer ul,
 #topics-bar ul,
-.archive-background,
-.related-topics,
+.archive-background .related-topics,
 .archive-background .rss-subscribe-link,
 .author-box ul li.author-posts-link,
 .global-nav,
@@ -275,4 +274,15 @@ h1.entry-title {
   &:hover {
     background-color: lighten( @black, 10% ) !important;
   }
+}
+.archive-background h1 {
+  margin-bottom: 0.5em;
+  font-family: @ps_sans_bold;
+  color: @black;
+  display: inline-block;
+  width: auto;
+  text-align: left;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  border-bottom: 5px @blue solid;
 }
