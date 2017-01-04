@@ -682,6 +682,10 @@ hr {
 h1.entry-title {
   color: #232323;
 }
+.entry-content .image p {
+  font-size: 15px;
+  line-height: 1.2em;
+}
 .pull-quote,
 .type-pull-quote,
 .pullquote {
