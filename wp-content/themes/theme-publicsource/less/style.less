@@ -170,6 +170,10 @@ hr {
 h1.entry-title {
   color: @black;
 }
+.entry-content .image p {
+  font-size: 15px;
+  line-height: 1.2em;
+}
 
 .pull-quote, 
 .type-pull-quote,
@@ -261,5 +265,14 @@ h1.entry-title {
 	  background-color: @black;
 	  color: @white;
     }
+  }
+}
+.largo-follow .social-btn {
+  background-color: @black !important;
+  &.subscribe i {
+    color: @primary;
+  }
+  &:hover {
+    background-color: lighten( @black, 10% ) !important;
   }
 }

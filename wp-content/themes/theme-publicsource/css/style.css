@@ -682,6 +682,10 @@ hr {
 h1.entry-title {
   color: #232323;
 }
+.entry-content .image p {
+  font-size: 15px;
+  line-height: 1.2em;
+}
 .pull-quote,
 .type-pull-quote,
 .pullquote {
@@ -778,4 +782,13 @@ h1.entry-title {
 .widget.largo-donate.rev .widgettitle {
   background-color: #232323;
   color: #ffffff;
+}
+.largo-follow .social-btn {
+  background-color: #232323 !important;
+}
+.largo-follow .social-btn.subscribe i {
+  color: #418cff;
+}
+.largo-follow .social-btn:hover {
+  background-color: #3d3d3d !important;
 }
