@@ -125,14 +125,20 @@ h2 a {
     font-size: 15px;
   }
 }
-#topics-bar ul {
-  font-family: @ps_serif;
-  li {
-    font-size: 17px;
-    &.menu-label {
-      font-size: 17px;
+#topics-bar {
+  display: none; //show only on homepage
+  ul {
+    font-family: @ps_sans;
+    li {
+      font-size: 16px;
+      &.menu-label {
+        font-size: 16px;
+      }
     }
   }
+}
+.home #topics-bar {
+  display: block;
 }
 .alert-wrapper {
   background-color: #f7f7f7;
@@ -285,7 +291,7 @@ h1.entry-title {
     display: inline-block;
     width: auto;
     text-align: left;
-    font-size: 1.75em;
+    font-size: 2em;
     text-transform: uppercase;
     border-bottom: 5px @blue solid;
   }
@@ -294,6 +300,11 @@ h1.entry-title {
     margin: 5px 15px 10px 0;
     padding: 4px;
     border: 1px solid @grayLighter;
+  }
+  @media( max-width: 600px ) {
+    .rss-subscribe-link {
+	  display: none;
+    }
   }
 }
 

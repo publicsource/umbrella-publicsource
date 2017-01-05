@@ -666,14 +666,20 @@ h2 a {
   font-family: 'tk-mallory-n7', sans-serif;
   font-size: 15px;
 }
+#topics-bar {
+  display: none;
+}
 #topics-bar ul {
-  font-family: 'tk-crimson-n5', serif;
+  font-family: 'tk-mallory-n3', sans-serif;
 }
 #topics-bar ul li {
-  font-size: 17px;
+  font-size: 16px;
 }
 #topics-bar ul li.menu-label {
-  font-size: 17px;
+  font-size: 16px;
+}
+.home #topics-bar {
+  display: block;
 }
 .alert-wrapper {
   background-color: #f7f7f7;
@@ -822,7 +828,7 @@ h1.entry-title {
   display: inline-block;
   width: auto;
   text-align: left;
-  font-size: 1.75em;
+  font-size: 2em;
   text-transform: uppercase;
   border-bottom: 5px #418cff solid;
 }
@@ -831,6 +837,11 @@ h1.entry-title {
   margin: 5px 15px 10px 0;
   padding: 4px;
   border: 1px solid #c4c4c4;
+}
+@media (max-width: 600px) {
+  .archive-background .rss-subscribe-link {
+    display: none;
+  }
 }
 #site-footer input.search-query {
   height: auto;
