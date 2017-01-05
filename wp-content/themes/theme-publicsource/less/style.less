@@ -178,6 +178,7 @@ h1.entry-title {
 .pull-quote, 
 .type-pull-quote,
 .pullquote {
+  margin-bottom: 1em;
   font-family: @ps_sans_bold;
   font-size: 1.6em;
   font-weight: 700;
@@ -276,14 +277,26 @@ h1.entry-title {
     background-color: lighten( @black, 10% ) !important;
   }
 }
-.archive-background h1 {
-  margin-bottom: 0.5em;
-  font-family: @ps_sans_bold;
-  color: @black;
-  display: inline-block;
-  width: auto;
-  text-align: left;
-  font-size: 1.75em;
-  text-transform: uppercase;
-  border-bottom: 5px @blue solid;
+.archive-background {
+  h1 {
+    margin-bottom: 0.5em;
+    font-family: @ps_sans_bold;
+    color: @black;
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    font-size: 1.75em;
+    text-transform: uppercase;
+    border-bottom: 5px @blue solid;
+  }
+  .author-box img {
+    float: left;
+    margin: 5px 15px 10px 0;
+    padding: 4px;
+    border: 1px solid @grayLighter;
+  }
+}
+
+#site-footer input.search-query {
+  height: auto;
 }

@@ -711,6 +711,7 @@ h1.entry-title {
 .pull-quote,
 .type-pull-quote,
 .pullquote {
+  margin-bottom: 1em;
   font-family: 'tk-mallory-n7', sans-serif;
   font-size: 1.6em;
   font-weight: 700;
@@ -824,4 +825,13 @@ h1.entry-title {
   font-size: 1.75em;
   text-transform: uppercase;
   border-bottom: 5px #418cff solid;
+}
+.archive-background .author-box img {
+  float: left;
+  margin: 5px 15px 10px 0;
+  padding: 4px;
+  border: 1px solid #c4c4c4;
+}
+#site-footer input.search-query {
+  height: auto;
 }
