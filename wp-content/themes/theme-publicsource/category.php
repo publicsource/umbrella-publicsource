@@ -29,7 +29,7 @@ $queried_object = get_queried_object();
 	<?php get_template_part( 'partials/archive', 'category-related' ); ?>
 </header>
 
-<div class="clearfix">
+<div id="category-featured" class="clearfix">
 
 	<?php if ( $paged < 2 && of_get_option( 'hide_category_featured' ) == '0' ) {
 		$featured_posts = largo_get_featured_posts_in_category( $wp_query->query_vars['category_name'] );

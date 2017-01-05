@@ -1,14 +1,36 @@
+// Some mixin utilities
+.twocolumn {
+  display: block;
+  width: 48.93617021%;
+  min-height: 28px;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 0;
+  &:nth-child( 2n ) {
+    margin-left: 2.12765957%;
+  }
+  &:nth-child( 2n + 1 ) {
+    clear: left;
+  }
+}
+.onecolumn {
+  clear: both;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .heading-treatment {
   text-align: center;
-  font-family:@ps_sans_bold;
-  font-size:18px;
+  font-family: @ps_sans_bold;
+  font-size: 18px;
   text-transform: uppercase;
-  color:@black;
-  margin-bottom:2em;
+  color: @black;
+  margin-bottom: 2em;
 
   span {
     border-bottom: 4px solid @primary;
-    padding-bottom: .25em;
+    padding-bottom: 0.25em;
   }
 }
 
@@ -28,7 +50,8 @@
     font-family: @ps_sans_bold;
     text-transform: uppercase;
 
-    a, a:visited {
+    a,
+    a:visited {
       color:@white;
     }
 
@@ -89,8 +112,6 @@
 .prominence-smaller-tag {
   font-size: 10px;
 }
-
-
 
 // Copied from Largo https://github.com/INN/Largo/blob/master/less/inc/mixins.less#L197
 .translate(@x, @y) {
