@@ -729,6 +729,9 @@ hr {
   border-top: 1px solid #c4c4c4;
   border-bottom: none;
 }
+hr.thick {
+  border-top: 10px solid #000;
+}
 .hero {
   background-color: transparent;
 }
@@ -794,7 +797,7 @@ h1.entry-title {
   min-height: 0px;
   padding: 15px;
   background-color: #ffffff;
-  border: 8px solid #232323;
+  border: 5px solid #232323;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -824,7 +827,7 @@ h1.entry-title {
   border: none;
 }
 .widget.rev .widgettitle {
-  background-color: #232323;
+  background-color: #282828;
   color: #ffffff;
 }
 .widget.no-bg {
@@ -868,6 +871,11 @@ h1.entry-title {
   font-size: 2em;
   text-transform: uppercase;
   border-bottom: 5px #418cff solid;
+}
+.archive-background .author-box {
+  padding: 0;
+  background: none;
+  border: none;
 }
 .archive-background .author-box img {
   float: left;

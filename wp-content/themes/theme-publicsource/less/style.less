@@ -169,6 +169,9 @@ hr {
   clear: both;
   border-top: 1px solid @neutral3;
   border-bottom: none;
+  &.thick {
+    border-top: 10px solid #000;
+  }
 }
 
 .hero {
@@ -236,7 +239,7 @@ h1.entry-title {
     min-height: 0px;
     padding: 15px;
     background-color: @white;
-    border: 8px solid @black;
+    border: 5px solid @black;
     .border-radius( 1px );
   } 
 }
@@ -261,7 +264,7 @@ h1.entry-title {
     background-color: lighten( @black, 2% ); 
     border: none; 
     .widgettitle {
-	  background-color: @black;
+	  background-color: lighten( @black, 2% ); 
 	  color: @white;
     }
   }
@@ -310,11 +313,16 @@ h1.entry-title {
     text-transform: uppercase;
     border-bottom: 5px @blue solid;
   }
-  .author-box img {
-    float: left;
-    margin: 5px 15px 10px 0;
-    padding: 4px;
-    border: 1px solid @grayLighter;
+  .author-box {
+	padding: 0;
+	background: none;
+	border: none;
+	img {
+      float: left;
+      margin: 5px 15px 10px 0;
+      padding: 4px;
+      border: 1px solid @grayLighter;
+    }
   }
   @media( max-width: 600px ) {
     .rss-subscribe-link {
