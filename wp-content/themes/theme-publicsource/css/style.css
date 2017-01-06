@@ -735,12 +735,24 @@ hr.thick {
 .hero {
   background-color: transparent;
 }
+.hero.span12 {
+  margin-left: 0;
+}
+.hero.is-image img {
+  margin-bottom: 0.25em;
+}
 h1.entry-title {
   color: #232323;
 }
 .entry-content .image p {
   font-size: 15px;
   line-height: 1.2em;
+}
+body.normal.single-post p.wp-caption-text {
+  font-style: italic;
+}
+body.normal.single-post .hero p.wp-caption-text {
+  margin-bottom: 0;
 }
 .pull-quote,
 .type-pull-quote,
@@ -815,22 +827,29 @@ h1.entry-title {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.widget {
+.entry-content h4 {
+  font-family: 'tk-mallory-n3', sans-serif;
+}
+.widget,
+#sidebar .widget {
   background-color: #f7f7f7;
   background: url(../img/dot.png) repeat repeat center center;
   border: 1px solid #232323;
   padding: 1em;
 }
-.widget.rev {
+.widget.rev,
+#sidebar .widget.rev {
   background: none;
   background-color: #282828;
   border: none;
 }
-.widget.rev .widgettitle {
+.widget.rev .widgettitle,
+#sidebar .widget.rev .widgettitle {
   background-color: #282828;
   color: #ffffff;
 }
-.widget.no-bg {
+.widget.no-bg,
+#sidebar .widget.no-bg {
   background: none;
   border: none;
 }
@@ -861,6 +880,95 @@ h1.entry-title {
 .largo-follow .social-btn:hover {
   background-color: #3d3d3d !important;
 }
+.widget #mc_embed_signup form {
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+.widget #mc_embed_signup .visuallyhidden {
+  display: none;
+}
+.widget #mc_embed_signup label {
+  display: inline-block;
+  background-color: #232323;
+  color: #ffffff;
+  padding: 0 20px;
+  line-height: 40px;
+  font-size: 26.66666667px;
+  font-family: 'tk-mallory-n3', sans-serif;
+  white-space: nowrap;
+  margin-right: 40px;
+  margin-bottom: 0;
+  position: relative;
+}
+.widget #mc_embed_signup label:after {
+  border-color: transparent transparent transparent #232323;
+  border-width: 20px;
+  border-style: solid;
+  font-size: 0;
+  height: 0;
+  width: 0;
+  box-sizing: content-box;
+  content: '';
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: -40px;
+}
+.widget #mc_embed_signup input {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: -9px;
+  height: 40px;
+}
+.widget #mc_embed_signup input[type=submit] {
+  background-color: #232323;
+  border: 4px solid #232323;
+  padding: 0.5em 1em;
+  line-height: 1;
+  font-family: 'tk-mallory-n3', sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.widget #mc_embed_signup input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #232323;
+}
+@media (max-width: 900px) {
+  .widget #mc_embed_signup label {
+    display: block;
+    clear: both;
+    margin-right: 0;
+    font-size: 22px;
+  }
+  .widget #mc_embed_signup label::after {
+    display: none;
+  }
+  .widget #mc_embed_signup input {
+    margin-top: 0.5em;
+  }
+  .widget #mc_embed_signup input:first-of-type {
+    clear: left;
+  }
+}
+.interstitial .widget #mc_embed_signup label {
+  display: block;
+  clear: both;
+  margin-right: 0;
+  font-size: 22px;
+}
+.interstitial .widget #mc_embed_signup label::after {
+  display: none;
+}
+.interstitial .widget #mc_embed_signup input {
+  margin-top: 0.5em;
+}
+.interstitial .widget #mc_embed_signup input:first-of-type {
+  clear: left;
+}
+.interstitial .widget.no-bg {
+  padding: 0 !important;
+}
 .archive-background h1 {
   margin-bottom: 0.5em;
   font-family: 'tk-mallory-n7', sans-serif;
@@ -872,7 +980,7 @@ h1.entry-title {
   text-transform: uppercase;
   border-bottom: 5px #418cff solid;
 }
-.archive-background .author-box {
+.archive-background .widget {
   padding: 0;
   background: none;
   border: none;
