@@ -958,22 +958,22 @@ body.normal.single-post .hero p.wp-caption-text {
     clear: left;
   }
 }
-.interstitial .widget #mc_embed_signup label {
+.stories .interstitial .widget #mc_embed_signup label {
   display: block;
   clear: both;
   margin-right: 0;
   font-size: 22px;
 }
-.interstitial .widget #mc_embed_signup label::after {
+.stories .interstitial .widget #mc_embed_signup label::after {
   display: none;
 }
-.interstitial .widget #mc_embed_signup input {
+.stories .interstitial .widget #mc_embed_signup input {
   margin-top: 0.5em;
 }
-.interstitial .widget #mc_embed_signup input:first-of-type {
+.stories .interstitial .widget #mc_embed_signup input:first-of-type {
   clear: left;
 }
-.interstitial .widget.no-bg {
+.stories .interstitial .widget.no-bg {
   padding: 0 !important;
 }
 .archive-background h1 {
