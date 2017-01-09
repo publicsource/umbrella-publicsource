@@ -339,9 +339,9 @@ hr {
 }
 #home-category-grid .widget p.morelink {
   margin-top: -8px;
+  font-family: 'tk-mallory-n3', sans-serif;
   font-style: italic;
   text-align: left;
-  font-family: 'tk-mallory-n3', sans-serif;
 }
 #home-category-grid .widget p.morelink a:hover {
   color: #232323;
@@ -399,6 +399,11 @@ hr {
 }
 #home-bottom-feature .widget {
   text-align: center;
+}
+#home-bottom-feature .widget p.morelink {
+  clear: both;
+  font-family: 'tk-mallory-n3', sans-serif;
+  font-style: italic;
 }
 #home-bottom-feature .largo-recent-posts li {
   margin-bottom: 2em;

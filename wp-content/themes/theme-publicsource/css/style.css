@@ -861,6 +861,10 @@ body.normal.single-post .hero p.wp-caption-text {
   font-family: 'tk-mallory-n3', sans-serif;
   font-size: 1.5em;
 }
+.widget.largo-donate p {
+  font-family: 'tk-mallory-n3', sans-serif;
+  font-size: 18px;
+}
 .widget.largo-donate .btn {
   background: none;
   color: #418cff;
