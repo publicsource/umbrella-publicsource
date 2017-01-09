@@ -750,11 +750,17 @@ h1.entry-title {
   font-size: 15px;
   line-height: 1.2em;
 }
-body.normal.single-post p.wp-caption-text {
+body.normal.single-post p.wp-caption-text,
+body.normal.single-post .hero .navis-slideshow p.wpcaption-text {
   font-style: italic;
+  font-size: 15px !important;
+  line-height: 1.2em;
 }
 body.normal.single-post .hero p.wp-caption-text {
   margin-bottom: 0;
+}
+body.normal.single-post .hero .navis-slideshow p.wp-caption-text {
+  margin-left: 0;
 }
 .pull-quote,
 .type-pull-quote,
